@@ -48,6 +48,19 @@
   body {
     margin: 0;
     padding: 0;
+    &::-webkit-scrollbar {
+        z-index: 999999999999999999999999999999999999 !important;
+        background: #f1f1f1 ;
+      }
+      &::-webkit-scrollbar-track {
+        z-index: 999999999999999999999999999999999999 !important;
+
+      }
+      &::-webkit-scrollbar-thumb {
+        z-index: 999999999999999999999999999999999999 !important;
+        background:   #3F4046;
+
+      }
   }
   
   .intro {
@@ -207,7 +220,7 @@
   
   .intro_text {
     max-width: 481px;
-    max-height: 71px;
+
     font-family: "Open Sans", sans-serif;
     font-size: 21px;
     font-style: italic;
@@ -223,7 +236,12 @@
   }
   
 
-
+.elem_info{
+    text-align: center;
+    img{
+        width: 100%;
+    }
+}
   
   .chapter2_title {
     font-family: "Reey", sans-serif;
@@ -261,7 +279,7 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    max-width: 1200px;
+
     margin: 0 auto;
   }
   
@@ -280,7 +298,7 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 1250px;
+
     margin: 0 auto;
   }
   
@@ -288,22 +306,18 @@
     font-family: "Open Sans", sans-serif;
     font-size: 29.2px;
     font-weight: bold;
-    text-align: left;
+
     color: #343434;
   }
   
   .chapter2 .element_info .element_txt {
     font-family: "Open Sans", sans-serif;
     font-size: 22.9px;
-    text-align: left;
+
     color: #343434;
   }
   
-  .chapter2 .element_info .el2 {
-    margin-right: 158px;
-    margin-left: 172px;
-  }
-  
+
   .chapter2_btn {
     background-color: #343434;
     padding: 30px 20px;
@@ -781,3 +795,125 @@
     margin-right: 41px;
   }
   
+
+
+
+
+  @media(max-width:991.98px){
+    .nav{
+        display: none !important;
+    }
+    .menu_wrapper{
+        display: none;
+    }
+    .burger{
+        display: flex !important;
+    }
+
+}
+
+@media(min-width:992px){
+    .burger,.menu_wrapper,.menu_open{
+        display: none !important;
+    }
+
+    .d-none{
+        display: block !important ;
+    }
+    .overflow_hidden{
+        overflow: scroll !important;
+    }
+
+}
+.overflow_hidden{
+    overflow: hidden ;
+}
+
+.d-none{
+    display: none ;
+}
+
+.transform_rotate{
+    flex-direction: column;
+    gap: 9px;
+    position: absolute;
+    justify-content: center;
+    height: 45px;
+    z-index: 999 !important;
+    cursor: pointer;
+    top: 8%;
+    right: 8%;
+    .span_burger1{
+        transform: rotate(-45deg);
+        transition: .5s;
+
+    }
+    .span_burger2{
+        display: none !important;
+    }
+    .span_burger3{
+        margin-top: -31.3%;
+        transform: rotate(45deg);
+        transition: .5s;
+
+    }
+
+    span{
+        width: 40px;
+        height: 4px;
+        background:#fff;
+        cursor: pointer;
+    }
+}
+.nav_link{
+    cursor: pointer;
+}
+.menu_open{
+    display: flex ;
+    height: 100vh !important;
+    width: 100%;
+    position: absolute;
+    justify-content: center;
+    transition: .5s;
+    pointer-events: all;
+    z-index: 999;
+    opacity: 1;
+    right: 0;
+    top: 0;
+    z-index: 10;
+    background: #916e6e;
+    .menu_container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+            z-index: 10;
+
+        .menu_link{
+            text-decoration: none;
+            font-family: 'Raleway',sans-serif;
+            font-size:2.1rem;
+            font-weight: 600;
+            line-height: 70px;
+            letter-spacing: 3px;
+            text-align: center;
+            color: #fff;
+            margin-left: 0;
+            text-transform: uppercase;
+            display: inline-block;
+            vertical-align: top;
+            position: relative;
+            width: 100%;
+                cursor: pointer;
+                    z-index: 10;
+          }
+        .button{
+            background: #3293E2;
+            width: 100%;
+            padding: 0px 18px;
+            border-radius: 20px;
+            margin:5% auto 0;
+                cursor: pointer;
+                    z-index: 10;
+        }
+    }
+}
