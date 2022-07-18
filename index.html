@@ -2,8 +2,8 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>WebMaster</title>
-	<link rel="stylesheet" href="css/style.css">
+	<title>Webmaster</title>
+	<link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="font_awesome/font-awesome/css/font-awesome.min.css">
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
@@ -15,52 +15,53 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
    	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<script src="jQuery/jquery-3.6.0.min.js"></script>
 
 </head>
 <body>
-    <section class="intro">
+    <section class="intro element-animation" id="home">
 
-    <div class="header_links">
+        <div class="intro_container">
+            <div class="header_links">
 
-        <nav class="links">
-            <a href="#">Home</a>
-            <a href="#">Menu</a>
-            <a href="#">Our Story</a>
-            <a href="#">Contact Us</a>
-        </nav>
-        <div class="search-box">
-            <input type="text" class="search-txt">
-            <a href="#" class="search-btn srch_selft">
-                <img src="img/1header/Search.png" alt="">
-            </a>
-        </div>
-    </div>
-
-    <div class="header_content">
-        <div class="intro_info">
-            <div class="intro_logo"><img src="img/1header/header_logo.png" alt=""></div>
-            <div class="intro_title">Italian Food</div>
-    
-            <div class="sbt">
-                <div class="intro_subtitle">LOREMIPSUM DOLOR</div>
-                <div class="intro_button">
-                    <a href="#">READ MORE</a>
+                <nav class="links">
+                    <a href="#home">Home</a>
+                    <a href="#menu">Menu</a>
+                    <a href="#ourstory">Our Story</a>
+                    <a href="#contactus">Contact Us</a>
+                </nav>
+                <div class="search-box">
+                    <input type="text" class="search-txt">
+                    <a href="#" class="search-btn srch_selft">
+                        <img src="img/1header/Search.png" alt="">
+                    </a>
                 </div>
-                <div class="intro_text">Lorem ipsum dolor sit amet, consectetur adipi-scing elit, sed do iusmod tempor incididunt ut labore et dolore magna.</div>
             </div>
-    
+        
+            <div class="header_content">
+                <div class="intro_info">
+                    <div class="intro_logo"><img src="img/1header/header_logo.png" alt=""></div>
+                    <div class="intro_title">Italian Food</div>
+            
+                    <div class="sbt">
+                        <div class="intro_subtitle">LOREMIPSUM DOLOR</div>
+                        <div class="intro_button">
+                            <a href="#">READ MORE</a>
+                        </div>
+                        <div class="intro_text">Lorem ipsum dolor sit amet, consectetur adipi-scing elit, sed do iusmod tempor incididunt ut labore et dolore magna.</div>
+                    </div>
+            
+                </div>
+            
+                <div class="intro_imgs">
+                    <div class="img1"><img src="img/1header/lapsha.png" alt=""></div>
+                    <div class="img2"><img src="img/1header/sup.png" alt=""></div>
+                    <div class="img3"><img src="img/1header/listya.png" alt=""></div>
+                </div>
+            </div>
         </div>
-    
-        <div class="intro_imgs">
-            <div class="img1"><img src="img/1header/lapsha.png" alt=""></div>
-            <div class="img2"><img src="img/1header/sup.png" alt=""></div>
-            <div class="img3"><img src="img/1header/listya.png" alt=""></div>
-        </div>
-    </div>
 
     </section>
-    <section class="chapter2">
+    <section id="menu" class="chapter2  element-animation">
         <div class="chapter2_title">Lorem Ipsum  Dolor</div>
         <div class="chapter2_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. </div>
 
@@ -100,7 +101,7 @@
         </div>
     </section>
 
-    <section class="more_info">
+    <section class="more_info  element-animation">
         <div class="chapter2_title more_title">Lorem Ipsum  Dolor</div>
 
         <div class="more_text">
@@ -115,7 +116,7 @@
         </div>
     </section>
 
-    <section class="promo">
+    <section class="promo  element-animation">
         <div class="promo_wrapper">
             <div class="promo_1">
 
@@ -141,7 +142,7 @@
         </div>
     </section>
 
-    <section class="pizza">
+    <section class="pizza element-animation">
         <div class="pizza_head">
             <div class="chapter2_title pizza_title">Lorem Ipsum Dolor Sit Amer</div>
             <div class=" pizza_sbt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</div>
@@ -151,7 +152,7 @@
         <div class="pizza_img pz_img2"><img src="img/chapter_5/2.png" alt=""></div>
         <div class="pizza_img pz_img3"><img src="img/chapter_5/3.png" alt=""></div>
     </section>
-    <section class="pizza_documentation">
+    <section id="ourstory" class="pizza_documentation element-animation">
         <div class="pizza_info">
             <div class="info_col">
                 <div class="info_col_title">Lorem Ipsum</div>
@@ -175,7 +176,7 @@
         </div>
     </section>
 
-    <section class="title_here">
+    <section class="title_here element-animation">
 
         <div class="title_here_img"></div>
 
@@ -197,7 +198,7 @@
 
 
     <footer>
-        <div class="footer_cols">
+        <div id="contactus" class="footer_cols  element-animation">
 
             <div class="footer_col">
                 <div class="footer_col_title">Title Here</div>
@@ -237,7 +238,8 @@
             </div>
         </div>
     </footer>
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 
 </html>
